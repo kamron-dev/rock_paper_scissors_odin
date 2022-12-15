@@ -14,6 +14,8 @@ function playRound(playerSelection, computerSelection) {
         alert(`You won! ${playerSelection} beats ${computerSelection}!`)
     } else  if (playerSelection === 'paper' && computerSelection === 'rock'){
         alert(`You won! ${playerSelection} beats ${computerSelection}!`)
+    } else if (playerSelection === computerSelection) {
+        alert(`Tie!`)
     } else {
         alert(`You lose! ${computerSelection} beats ${playerSelection}`)
     }
