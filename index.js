@@ -1,7 +1,10 @@
 const items = ['rock', 'paper', 'scissors']
 
+<<<<<<< Updated upstream
 let playerScore = 0;
 let computerScore = 0;
+=======
+>>>>>>> Stashed changes
 
 // Function that randomly assigns either rock paper or scissors for the computer
 function getComputerChoice(items) {
@@ -13,10 +16,17 @@ function playRound(playerSelection, computerSelection) {
     // your code here!
     if (playerSelection === 'rock' && computerSelection === 'scissors') {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         return `You won! ${playerSelection} beats ${computerSelection}!`
+=======
+        
+        return playerSelection;
+>>>>>>> Stashed changes
     } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        return `You won! ${playerSelection} beats ${computerSelection}!`
+        
+        return playerSelection;
     } else  if (playerSelection === 'paper' && computerSelection === 'rock'){
+<<<<<<< Updated upstream
         return `You won! ${playerSelection} beats ${computerSelection}!`
 =======
         alert(`You won! ${playerSelection} beats ${computerSelection}!`)
@@ -36,23 +46,39 @@ function playRound(playerSelection, computerSelection) {
     } else {
 <<<<<<< Updated upstream
         return `You lose! ${computerSelection} beats ${playerSelection}`
+=======
+        
+        return playerSelection;
+    } else if (playerSelection === computerSelection) {
+       return `Tie!`
+    } else {
+        
+        return computerSelection; 
+>>>>>>> Stashed changes
     }
   }
    
   const playerSelection = prompt("Choose rock, paper or scissors!").toLowerCase();
   const computerSelection = getComputerChoice(items);
-  playRound(playerSelection, computerSelection);
+//   playRound(playerSelection, computerSelection);
 
   function game() {
-    let playerScore;
-    let computerScore;
+    let playerScore = 0;
+    let computerScore = 0;
     
-    for (let i = 1; i < 5; i++) {
-        playRound(playerSelection, computerSelection)
-        if 
+    playRound(playerSelection, computerSelection)
+    if (playerSelection) {
+        playerScore += 1
+        alert(`playerScore is ${playerScore}`)
+    } else if (computerSelection) {
+        computerScore += 1
+        alert(`computerScore is ${computerScore}`)
+    } else {
+        null
     }
     
   }
+<<<<<<< Updated upstream
 =======
         alert(`You lose! ${computerSelection} beats ${playerSelection}`)
         return computerScore += 1;
@@ -75,5 +101,9 @@ function playRound(playerSelection, computerSelection) {
         alert(`You lost! Computer's score is ${computerScore}`)
     }
   }
+  game()
+>>>>>>> Stashed changes
+=======
+
   game()
 >>>>>>> Stashed changes
