@@ -9,18 +9,29 @@ function getComputerChoice(items) {
 function playRound(playerSelection, computerSelection) {
     // your code here!
     if (playerSelection === 'rock' && computerSelection === 'scissors') {
-        alert(`You won! ${playerSelection} beats ${computerSelection}!`)
+        return `You won! ${playerSelection} beats ${computerSelection}!`
     } else if (playerSelection === 'scissors' && computerSelection === 'paper') {
-        alert(`You won! ${playerSelection} beats ${computerSelection}!`)
+        return `You won! ${playerSelection} beats ${computerSelection}!`
     } else  if (playerSelection === 'paper' && computerSelection === 'rock'){
-        alert(`You won! ${playerSelection} beats ${computerSelection}!`)
+        return `You won! ${playerSelection} beats ${computerSelection}!`
     } else if (playerSelection === computerSelection) {
-        alert(`Tie!`)
+       return `Tie!`
     } else {
-        alert(`You lose! ${computerSelection} beats ${playerSelection}`)
+        return `You lose! ${computerSelection} beats ${playerSelection}`
     }
   }
    
   const playerSelection = prompt("Choose rock, paper or scissors!").toLowerCase();
   const computerSelection = getComputerChoice(items);
   playRound(playerSelection, computerSelection);
+
+  function game() {
+    let playerScore;
+    let computerScore;
+    
+    for (let i = 1; i < 5; i++) {
+        playRound(playerSelection, computerSelection)
+        if 
+    }
+    
+  }
