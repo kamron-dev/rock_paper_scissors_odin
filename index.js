@@ -40,7 +40,15 @@ function game() {
     let computerSelection = getComputerChoice(items);
     playRound(playerSelection, computerSelection)      
     }
+    
+    if (playerScore > computerScore) {
+        alert(`You won! You score is ${playerScore}!`)
+    } else if (playerScore < computerScore) {
+        alert(`You lost! Computer score is ${computerScore}`)
+    } else {
+        alert(`It's a tie! ${playerScore} : ${computerScore}`)
+    }
 }
 game();
-alert(playerScore);
-alert(computerScore);
+// alert(playerScore);
+// alert(computerScore);
