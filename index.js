@@ -21,15 +21,26 @@ function playRound(playerSelection, computerSelection) {
         return playerScore += 1;
     } else if (playerSelection === computerSelection) {
         alert(`Tie!`)
-        return;
+        
     } else {
         alert(`You lose! ${computerSelection} beats ${playerSelection}`)
         return computerScore += 1;
     }
   }
    
-  const playerSelection = prompt("Choose rock, paper or scissors!").toLowerCase();
-  const computerSelection = getComputerChoice(items);
-  playRound(playerSelection, computerSelection);
-  alert(playerScore);
-  alert(computerScore);
+//   const playerSelection = prompt("Choose rock, paper or scissors!").toLowerCase();
+//   const computerSelection = getComputerChoice(items);
+//   playRound(playerSelection, computerSelection);
+//   alert(playerScore);
+//   alert(computerScore);
+
+function game() {
+    for (let i = 0; i < 5; i++) {
+    let playerSelection = prompt("Choose rock, paper or scissors!").toLowerCase();
+    let computerSelection = getComputerChoice(items);
+    playRound(playerSelection, computerSelection)      
+    }
+}
+game();
+alert(playerScore);
+alert(computerScore);
