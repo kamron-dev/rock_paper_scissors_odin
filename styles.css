@@ -1,0 +1,22 @@
+* {
+    
+    font-size: 35px;
+}
+button {
+    height: 95px;
+    width: 175px
+    
+}
+
+.for {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoresDiv {
+    text-align: left;
+}
+.resultsDiv {
+    text-align: center;
+}
